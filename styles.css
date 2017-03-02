@@ -8,26 +8,31 @@
 *  {box-sizing:border-box;}
 
 html,body  {
-  width:100%;
-  height:100%;
+  /*width:100%;
+  height:100vh;*/
   margin:0;
 
 }
 
+button {
+  cursor: pointer;
+}
+
 body{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image1-min.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/image1-min.jpg") no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  font-family: "Source Sans Pro", sans-serif;
  font-weight: 300;
+
 }
 
 
 .wrapper {
   width:100%;
-  height:100%;
+  height:100vh;
   display: flex;
   align-items:center;
   justify-content:center;
@@ -38,15 +43,32 @@ body{
   display:flex;
   flex-flow: column;
   align-items:center;
-  min-height: 400px;
+  min-height: 500px;
+
+}
+
+.shiny {
+color: #66ffcc;
 
 }
 
 .header-text {
   font-size:100px;
   color:#fff;
-  margin-bottom:20px;
+  margin-bottom:10px;
   text-transform:uppercase;
+}
+
+.coming-soon {
+  width:100%;
+  text-align:center;
+  /*margin-bottom:5px;*/
+  color: #66ffcc;
+	font-size: 25px;;
+	line-height: 1.65;
+  padding:0px 25px 0px 25px;
+  max-width:700px;
+
 }
 
 .welcome-text {
@@ -56,9 +78,7 @@ body{
   color: #ffffff;
 	font-size: 20px;;
 	line-height: 1.65;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding:5px;
+  padding:5px 15px 5px 15px;
   max-width:700px;
 }
 
@@ -68,9 +88,7 @@ body{
   color: #ffffff;
 	font-size: 20px;;
 	line-height: 1.65;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding:5px;
+  padding:5px 15px 5px 15px;
   max-width:700px;
 }
 
@@ -193,15 +211,33 @@ button {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;}
 
+.center {
+  text-align:center;
+  margin-top:10px;
 
-@media only screen and (max-width : 700px) {
+}
+.center p{
+  margin-top:15px;
+
+}
+
+@media only screen and (max-width : 736px) {
 .referral-link {
   font-size:30px;
+}
+
+.wrapper {
+  height:initial;
 }
 
 }
 
 @media only screen and (max-width : 490px) {
+
+
+.wrapper {
+  margin-top:100px;
+}
   .header-text{
     font-size:80px;
   }
@@ -221,5 +257,27 @@ button {
 .welcome-text {
   margin-bottom:20px;
 
+}
+
+.thank-you-text{
+  text-align:justify;;
+  padding-right:25px;
+  padding-left:25px;
+}
+}
+
+@media only screen and (max-width : 375px) {
+
+.wrapper {
+  margin-top:80px;
+}
+}
+
+
+
+@media only screen and (max-width : 350px) {
+
+.wrapper {
+  margin-top:30px;
 }
 }

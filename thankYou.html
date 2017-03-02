@@ -1,8 +1,23 @@
 <div ng-show="newUser.email" class="show"  class="ng-cloack">
-  <div class="thank-you-text"> <p><b>Thank you!</b> <br/>Want another 10% off your first order? Invite your friends with the link below and we'll give you an additional <b>10% off</b> for every 3 friends who sign up, up to <b>50% off</b>.</p></div>
-  <div class="input-container">
-    <div class="referral-link">www.boutive.com/htkY7890</div>
+
+  <div class="coming-soon">Thank you!</div>
+  <div class="thank-you-text">
+    <!-- <span class="center"><p>You have <span class="shiny">3</span> referrals</span>!</p></span> -->
+    <!-- <p ng-if="newUser && newUser.referrals">You have <span class="shiny">{{newUser.referrals}}</span> referral<span ng-if="newUser.referrals > 1">s</span>!</p> -->
+      <p>Want another 10%
+      off your first order? Refer 3 friends with your unique link below and you'll get <b>20%</b>
+      off your first order.
+    </p>
+    <!-- <p>Want to earn credit when your friends shop at Boutive?
+    Invite your friends with your unique link below and we'll give you <b>5%</b>
+    of every purchase your friends make for a year.
+  </p> -->
   </div>
+
+
+    <!-- <div class="referral-link">{{newUser.url}}</div> -->
+    <div class="referral-link">http://boutive.com?ref=tZRNNaEh</div>
+
   <div class="share-text">Share on</div>
   <div class="social-icons">
     <!-- <i class="fa fa-instagram" aria-hidden="true"></i> -->
